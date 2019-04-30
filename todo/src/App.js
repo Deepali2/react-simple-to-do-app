@@ -27,7 +27,7 @@ class App extends Component {
     ));
     return (
       <div className="App">      
-        <h1>Simple To Do App</h1>
+        <h1>React To Do App</h1>
         <form onSubmit={this.handleSubmit}>
           <input 
             type='text'
@@ -38,7 +38,6 @@ class App extends Component {
             className='todo-input'
             onChange={(e) => this.setState({[e.target.name]:e.target.value})}
           />
-          <button type='submit' className='save-button'>SAVE</button>
         </form>
         <div className='todo-content'>
           <ol>
